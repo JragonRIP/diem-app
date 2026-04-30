@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="102" fill="#1A1A18"/>
+  <rect x="35" y="35" width="442" height="442" rx="86" fill="none" stroke="#C9A84C" stroke-width="8"/>
+  <text x="256" y="286" text-anchor="middle" fill="#C9A84C" font-size="114" font-family="Cormorant Garamond, serif">Diem</text>
+</svg>

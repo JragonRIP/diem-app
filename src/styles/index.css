@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg: #1a1a18;
+  --card: #242420;
+  --card-2: #20201d;
+  --text: #f5f0e8;
+  --muted: rgba(245, 240, 232, 0.64);
+  --hairline: rgba(245, 240, 232, 0.14);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f5f0e8;
+  --card: #ffffff;
+  --card-2: #f2ece2;
+  --text: #1a1a18;
+  --muted: rgba(26, 26, 24, 0.62);
+  --hairline: rgba(26, 26, 24, 0.12);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  min-width: 320px;
+  font-feature-settings: "kern" 1, "liga" 1;
+  letter-spacing: 0.01em;
+}
+
+.diem-input {
+  @apply w-full rounded-xl border border-current bg-transparent px-3 py-3 text-sm outline-none transition focus:border-gold;
+  border-color: color-mix(in srgb, currentColor 20%, transparent);
+}
+
+.panel {
+  background: color-mix(in srgb, var(--card) 88%, transparent);
+  border: 1px solid var(--hairline);
+  backdrop-filter: blur(10px);
+}
