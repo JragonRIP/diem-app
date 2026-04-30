@@ -74,7 +74,10 @@ export default function App() {
   return (
     <main
       className="mx-auto flex min-h-screen w-full max-w-xl flex-col overflow-x-clip px-4 pb-24 font-body"
-      style={{ paddingTop: "max(1.5rem, env(safe-area-inset-top))" }}
+      style={{
+        paddingTop: "max(1.5rem, env(safe-area-inset-top))",
+        paddingBottom: "max(6rem, calc(1.5rem + env(safe-area-inset-bottom)))",
+      }}
       {...(sheetOpen ? {} : swipeHandlers)}
     >
       <header className="mb-5">

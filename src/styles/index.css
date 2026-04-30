@@ -47,6 +47,12 @@ html,
   overflow-x: hidden;
 }
 
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
 input,
 textarea,
 select {
