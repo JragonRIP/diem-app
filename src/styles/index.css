@@ -34,11 +34,23 @@ body {
   min-width: 320px;
   font-feature-settings: "kern" 1, "liga" 1;
   letter-spacing: 0.01em;
+  overflow-x: hidden;
 }
 
 .diem-input {
-  @apply w-full rounded-xl border border-current bg-transparent px-3 py-3 text-sm outline-none transition focus:border-gold;
+  @apply w-full rounded-xl border border-current bg-transparent px-3 py-3 text-base outline-none transition focus:border-gold;
   border-color: color-mix(in srgb, currentColor 20%, transparent);
+}
+
+html,
+#root {
+  overflow-x: hidden;
+}
+
+input,
+textarea,
+select {
+  font-size: 16px;
 }
 
 .panel {

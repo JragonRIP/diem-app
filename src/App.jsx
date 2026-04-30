@@ -72,7 +72,11 @@ export default function App() {
   };
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-xl flex-col px-4 pb-24 pt-6 font-body" {...swipeHandlers}>
+    <main
+      className="mx-auto flex min-h-screen w-full max-w-xl flex-col overflow-x-clip px-4 pb-24 font-body"
+      style={{ paddingTop: "max(1.5rem, env(safe-area-inset-top))" }}
+      {...(sheetOpen ? {} : swipeHandlers)}
+    >
       <header className="mb-5">
         <div className="mb-4 flex items-center justify-between">
           <h1 className="font-heading text-4xl tracking-[0.06em]">Diem</h1>
